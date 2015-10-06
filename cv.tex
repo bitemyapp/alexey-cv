@@ -1,0 +1,150 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+%% \usepackage[T1]{fontenc}
+%% \usepackage[sc,osf]{mathpazo}
+%% \usepackage[T1]{fontenc}
+%% \usepackage[urw-garamond]{mathdesign}
+\usepackage{fontspec}
+\setmainfont{Georgia}
+
+\def\name{Sophie Taylor}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {programming, aviation, types, systems},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\section*{Achievements}
+
+\begin{itemize}
+
+\item Took ownership of the Guidance, Navigation and Control subsystem of a search and rescue UAV blimp systems engineering project. I designed the autopilot, based on a BeagleBone running Gentoo. It read from a 9-axis inertial measurement unit, commanded gimballed engines, sent telemetry, and was commanded by a ground control station.
+
+\item Developed a rocket launch simulation in .NET with staging and orbit determination. Rockets could be specified by stringing together multiple stage structures, which contained details such as total mass, type of engine, fuel capacity and so on.
+
+\item Using C and Simulink I developed an Arduino based autopilot. I created plug-ins for both X-Plane, a PC flight simulator, and Simulink, to communicate with the autopilot, going through an intermediate microcontroller to convert analog outputs to digital outputs, thus enabling a full hardware-in-the-loop simulation.
+
+\item Wrote a 3D ray tracing engine using C\#. It was capable of reflections, refractions, anti-aliasing, and adsorption.
+
+\item Working on a Linear Homotopy Type Theory based programming language/proof assistant with features drawn from Coq, Agda, Epigram, and Idris.
+
+\end{itemize}
+
+
+\section*{Skills and Knowledge Areas}
+
+\subsection*{Mathematical}
+
+\begin{itemize}
+\item Homotopy Type theory
+\item Category theory
+\item Systems and Control theory
+\end{itemize}
+
+\subsection*{General}
+
+\begin{itemize}
+\item GCC and Emacs
+\item Team Foundation Server, SVN, and Git
+\item Windows and Linux (Debian based/Angstrom/Gentoo/Arch/Nix)
+\end{itemize}
+
+\subsection*{Languages}
+
+\begin{itemize}
+\item Haskell
+\item Basic knowledge of Coq, Agda, and Idris
+\item Matlab/Simulink
+\item C and some C++
+\item C\#/F\#
+\item LaTeX
+\item AVR assembly
+\item Learning Isabelle/HOL
+\end{itemize}
+
+\section*{Qualifications}
+
+Queensland University of Technology (2010 – present)
+Bachelor of Engineering (Aerospace Avionics) (studying)
+
+\subsection*{Relevant courses}
+
+\begin{itemize}
+\item Engineering problem solving \textemdash{} C, basic system analysis
+\item Introduction to Systems Design/Advanced Systems Design \textemdash{} Systems engineering, UAVs
+\item Microprocessors and Digital Systems \textemdash{} Embedded programming and CPU architecture/design
+\item Problem Solving and Programming
+\item Software Development
+\item Military Combat Electronics \textemdash{} Radar/lidar, missile guidance, electronic warfare
+\item Navigation Systems for Aircraft \textemdash{} Kalman filtering, GPS, IMUs, beacon navaids
+\item Fields, Transmission and Propagation \textemdash{} Maxwell’s laws, transmission lines, antennas
+\item Aircraft Systems and Flight Control \textemdash{} Control theory, stability derivatives
+\item Aerodynamics \textemdash{} airfoils, aircraft performance
+\item Modern Flight Control Systems \textemdash{} Control theory, autopilots, modeling and simulation of flight dynamics
+\end{itemize}
+
+\end{document}
