@@ -21,7 +21,7 @@
 \usepackage{fontspec}
 \setmainfont{Georgia}
 
-\def\name{Sophie Taylor}
+\def\name{Alexey Zabelin}
 
 \hypersetup{
   colorlinks = true,
@@ -34,7 +34,7 @@
 }
 
 \geometry{
-  body={6.5in, 8.5in},
+  body={5.0in, 8.5in},
   left=1.0in,
   top=1.25in
 }
@@ -78,77 +78,60 @@
 
 \vspace{0.25in}
 
-\section*{Achievements}
-
-\begin{itemize}
-
-\item Took ownership of the Guidance, Navigation and Control subsystem of a search and rescue UAV blimp systems engineering project. I designed the autopilot, based on a BeagleBone running Gentoo. It read from a 9-axis inertial measurement unit, commanded gimballed engines, sent telemetry, and was commanded by a ground control station.
-
-\item Developed a rocket launch simulation in .NET with staging and orbit determination. Rockets could be specified by stringing together multiple stage structures, which contained details such as total mass, type of engine, fuel capacity and so on.
-
-\item Using C and Simulink I developed an Arduino based autopilot. I created plug-ins for both X-Plane, a PC flight simulator, and Simulink, to communicate with the autopilot, going through an intermediate microcontroller to convert analog outputs to digital outputs, thus enabling a full hardware-in-the-loop simulation.
-
-\item Wrote a 3D ray tracing engine using C\#. It was capable of reflections, refractions, anti-aliasing, and adsorption.
-
-\item Working on a Linear Homotopy Type Theory based programming language/proof assistant with features drawn from Coq, Agda, Epigram, and Idris.
-
-\end{itemize}
-
-
 \section*{Skills and Knowledge Areas}
 
-\subsection*{Mathematical}
-
-\begin{itemize}
-\item Homotopy Type theory
-\item Category theory
-\item Systems and Control theory
-\end{itemize}
-
-\subsection*{General}
-
-\begin{itemize}
-\item GCC and Emacs
-\item Team Foundation Server, SVN, and Git
-\item Windows and Linux (Debian based/Angstrom/Gentoo/Arch/Nix)
-\end{itemize}
-
-\subsection*{Languages}
+\subsection*{Languages and tools}
 
 \begin{itemize}
 \item Haskell
-\item Basic knowledge of Coq, Agda, and Idris
-\item Matlab/Simulink
-\item C and some C++
-\item C\#/F\#
-\item LaTeX
-\item AVR assembly
-\item Learning Isabelle/HOL
+\item Ruby, Ruby on Rails
+\item Heroku
 \end{itemize}
 
-\section*{Qualifications}
 
-\begin{minipage}{0.45\linewidth}
-  \begin{tabular}{ll}
-    Queensland University of Technology & (2010 – present) \\
-    Bachelor of Engineering (Aerospace Avionics) & (studying) \\
-  \end{tabular}
-\end{minipage}
-
-\subsection*{Relevant courses}
+\section*{Experience}
 
 \begin{itemize}
-\item Engineering problem solving \textemdash{} C, basic system analysis
-\item Introduction to Systems Design/Advanced Systems Design \textemdash{} Systems engineering, UAVs
-\item Microprocessors and Digital Systems \textemdash{} Embedded programming and CPU architecture/design
-\item Problem Solving and Programming
-\item Software Development
-\item Military Combat Electronics \textemdash{} Radar/lidar, missile guidance, electronic warfare
-\item Navigation Systems for Aircraft \textemdash{} Kalman filtering, GPS, IMUs, beacon navaids
-\item Fields, Transmission and Propagation \textemdash{} Maxwell’s laws, transmission lines, antennas
-\item Aircraft Systems and Flight Control \textemdash{} Control theory, stability derivatives
-\item Aerodynamics \textemdash{} airfoils, aircraft performance
-\item Modern Flight Control Systems \textemdash{} Control theory, autopilots, modeling and simulation of flight dynamics
+\item Freelancing on Upwork - March '16
+  \begin{itemize}
+    \item Configured the \hyperlink{https://github.com/harrystech/prelaunchr}{prelaunchr gem}
+    \item Deployed the app to Heroku
+  \end{itemize}
+\end{itemize}
+
+
+\section*{Projects}
+
+\subsection*{Ballast}
+
+\url{https://github.com/bitemyapp/ballast}
+
+\begin{itemize}
+\item Wrote a Haskell API client for the Shipwire fulfillment platform
+\item Uses aeson, http-client, Hspec
+\end{itemize}
+
+\subsection*{twitter\_images}
+
+\url{https://github.com/alexeyzab/twitter_images}
+
+\begin{itemize}
+\item Ruby gem that lets you concurrently down images from Twitter
+\item Ruby, Twitter API, RSpec, CircleCI
+\item Located on Rubygems at \url{https://rubygems.org/gems/twitter_images}
+\end{itemize}
+
+\subsection*{Uchan}
+
+\url{https://github.com/alexeyzab/uchan}
+
+\begin{itemize}
+\item Anonymous forum where users can discuss their hobbies and attach images to their posts
+\item Ruby, Ruby on Rails, RSpec, TDD, CircleCI
+\item Uses Heroku Pipeline and auto-deploy from Github
+
+  %% \item Uses Heroku Pipeline and auto-deploy from Github Uses Heroku Pipeline and auto-deploy from Github Uses Heroku Pipeline and auto-deploy from Github Uses Heroku Pipeline and auto-deploy from Github Uses Heroku Pipeline and auto-deploy from Github Uses Heroku Pipeline and auto-deploy from Github
+
 \end{itemize}
 
 \end{document}
